@@ -1,6 +1,7 @@
 package application;
 
 import java.util.Arrays;
+import java.util.Timer;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -29,6 +30,10 @@ public class Cube {
 	 **/
 	private Block3[] block3;
 
+	/** for auto run */
+	private Timer timer = null;
+	
+	
 	public Cube() {
 	}
 
@@ -198,5 +203,31 @@ public class Cube {
 			block2[pos2[3]].setColorPair(dir, block2[pos2[1]].getColorPair(dir));
 			block2[pos2[1]].setColorPair(dir, ctmp);
 		}
+	}
+	// 自動で動かす
+	public void autoRun() {
+		if(timer!=null) {
+			timer.cancel();
+			timer = null;
+		}else {
+			timer = new Timer();
+			timer.schedule(new MyTask(this), 100, 100);
+		}
+	}
+	class MyTask extends TimerTask{
+		private Cube c;
+		
+		public MyTask(Cube c) {
+			this.c= c;
+		}
+		@Override
+		public void run() {
+			LAYER[] sa = LAYER.values();
+			LAYER layer = sa[(int) (Math.random() * sa.length)];
+			boolean clockwise = Math.random() > 0.5;
+			System.out.println("autorun layer=" + layer + " clockwise=" + clockwise);
+			c.rotate(layer, clockwise);
+		}
+		
 	}
 }

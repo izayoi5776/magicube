@@ -172,5 +172,6 @@ public class SampleController {
 	@FXML
 	public void onActionAuto(ActionEvent event) {
 		System.out.println("onActionAuto event=" + event);
+		c.autoRun();
 	}
 }
