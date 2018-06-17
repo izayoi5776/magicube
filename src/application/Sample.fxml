@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyTyped" onKeyTyped="#onKeyTyped" prefHeight="628.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <MenuBar layoutX="1.0" layoutY="-1.0" prefHeight="25.0" prefWidth="636.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onMenuNew" text="New" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Line endX="-21.0" endY="625.5" layoutX="289.0" layoutY="27.0" startX="-21.0" startY="-47.0" />
+      <Line endX="-21.0" endY="625.5" layoutX="333.0" layoutY="28.0" startX="-21.0" startY="-47.0" />
+      <Line endX="-21.0" endY="625.5" layoutX="373.0" layoutY="31.0" startX="-21.0" startY="-47.0" />
+      <Rectangle fx:id="c17" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c14" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c11" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c18" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c15" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c12" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c19" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c16" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c13" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c27" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="121.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c24" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="121.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c21" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="121.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c28" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="163.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c25" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="163.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c22" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="163.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c29" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="205.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c26" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="205.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c23" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="205.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c37" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="373.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c34" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="373.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c31" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="373.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c38" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="415.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c35" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="415.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c32" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="415.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c39" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="457.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c36" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="457.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c33" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="457.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c47" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="515.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c44" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c41" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="431.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c48" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="515.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c45" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c42" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="431.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c49" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="515.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c46" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c43" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="431.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c57" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="263.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c54" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c51" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c58" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="263.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c55" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c52" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c59" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="263.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c56" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c53" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c67" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c64" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c61" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="247.0" layoutY="53.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c68" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c65" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c62" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="289.0" layoutY="53.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c69" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c66" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <Rectangle fx:id="c63" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff1d" height="42.0" layoutX="331.0" layoutY="53.0" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <QuadCurve controlX="72.0" controlY="59.0" endX="92.0" endY="59.0" fill="#2197ff00" layoutX="155.0" layoutY="225.0" startX="65.0" startY="80.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="18.0" controlY="18.0" endX="80.0" endY="6.0" fill="#2197ff00" layoutX="165.0" layoutY="235.0" startX="18.0" startY="70.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="-25.0" controlY="-30.0" endX="72.0" endY="-48.0" fill="#2197ff00" layoutX="173.0" layoutY="244.0" startX="-33.0" startY="60.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="229.0" controlY="49.0" endX="209.0" endY="49.0" fill="#2197ff00" layoutX="165.0" layoutY="235.0" startX="229.0" startY="70.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="260.0" controlY="7.0" endX="198.0" fill="#2197ff00" layoutX="175.0" layoutY="242.0" startX="260.0" startY="64.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="276.0" controlY="-39.0" endX="187.0" endY="-54.0" fill="#2197ff00" layoutX="185.0" layoutY="252.0" startX="294.0" startY="52.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="199.0" controlY="189.0" endX="199.0" endY="169.0" fill="#2197ff00" layoutX="195.0" layoutY="262.0" startX="177.0" startY="189.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="225.0" controlY="211.0" endX="231.0" endY="159.0" fill="#2197ff00" layoutX="205.0" layoutY="272.0" startX="168.0" startY="222.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="263.0" controlY="242.0" endX="263.0" endY="149.0" fill="#2197ff00" layoutX="215.0" layoutY="282.0" startX="158.0" startY="254.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="11.0" controlY="170.0" endX="32.0" endY="170.0" fill="#2197ff00" layoutX="215.0" layoutY="282.0" startX="11.0" startY="149.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="-30.0" controlY="188.0" endX="24.0" endY="203.0" fill="#2197ff00" layoutX="225.0" layoutY="292.0" startX="-41.0" startY="139.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="-93.0" controlY="224.0" endX="12.0" endY="236.0" fill="#2197ff00" layoutX="235.0" layoutY="302.0" startX="-93.0" startY="129.0" stroke="BLACK" strokeType="INSIDE" />
+      <CubicCurve controlX1="-29.0" controlY1="168.0" controlY2="-22.0" endX="195.0" endY="-9.0" fill="#1f93ff00" layoutX="52.0" layoutY="167.0" startX="69.0" startY="159.0" stroke="BLACK" />
+      <CubicCurve controlX1="570.0" controlX2="506.0" controlY1="238.0" controlY2="-22.0" endX="312.0" endY="-22.0" fill="#1f93ff00" layoutX="61.0" layoutY="131.0" startX="437.0" startY="238.0" stroke="BLACK" />
+      <CubicCurve controlX1="544.0" controlX2="437.0" controlY1="152.0" controlY2="-22.0" endX="301.0" endY="-29.0" fill="#1f93ff00" layoutX="72.0" layoutY="187.0" startX="426.0" startY="140.0" stroke="BLACK" />
+      <CubicCurve controlX1="623.0" controlX2="581.0" controlY1="269.0" controlY2="-71.0" endX="299.0" endY="-71.0" fill="#1f93ff00" layoutX="73.0" layoutY="141.0" startX="426.0" startY="269.0" stroke="BLACK" />
+      <CubicCurve controlX1="-77.0" controlX2="-45.0" controlY1="172.0" controlY2="-71.0" endX="185.0" endY="-63.0" fill="#1f93ff00" layoutX="62.0" layoutY="177.0" startX="57.0" startY="192.0" stroke="BLACK" />
+      <CubicCurve controlX1="-159.0" controlX2="-47.0" controlY1="196.0" controlY2="-134.0" endX="172.0" endY="-116.0" fill="#1f93ff00" layoutX="72.0" layoutY="187.0" startX="49.0" startY="223.0" stroke="BLACK" />
+      <Label layoutX="181.0" layoutY="360.0" rotate="90.0" text="LEFT" />
+      <Label layoutX="409.0" layoutY="360.0" rotate="-90.0" text="RIGHT" />
+      <Label layoutX="291.0" layoutY="243.0" rotate="180.0" text="FRONT" />
+      <Label layoutX="295.0" layoutY="477.0" text="REAR" />
+      <Label layoutX="288.0" layoutY="99.0" text="BOTTOM" />
+      <Label layoutX="299.0" layoutY="351.0" text="TOP" />
+      <Label layoutX="261.0" layoutY="318.0" text="T1" />
+      <Label layoutX="304.0" layoutY="318.0" text="T2" />
+      <Label layoutX="345.0" layoutY="318.0" text="T3" />
+      <Label layoutX="261.0" layoutY="360.0" text="T4" />
+      <Label layoutX="345.0" layoutY="360.0" text="T6" />
+      <Label layoutX="262.0" layoutY="403.0" text="T7" />
+      <Label layoutX="304.0" layoutY="403.0" text="T8" />
+      <Label layoutX="345.0" layoutY="403.0" text="T9" />
+      <Label layoutX="220.0" layoutY="318.0" rotate="90.0" text="L1" />
+      <Label layoutX="220.0" layoutY="360.0" rotate="90.0" text="L4" />
+      <Label layoutX="220.0" layoutY="402.0" rotate="90.0" text="L7" />
+      <Label layoutX="387.0" layoutY="318.0" rotate="-90.0" text="R3" />
+      <Label layoutX="387.0" layoutY="360.0" rotate="-90.0" text="R6" />
+      <Label layoutX="387.0" layoutY="402.0" rotate="-90.0" text="R9" />
+      <Label layoutX="262.0" layoutY="443.0" text="E7" />
+      <Label layoutX="304.0" layoutY="443.0" text="E8" />
+      <Label layoutX="345.0" layoutY="444.0" text="E9" />
+      <Label layoutX="262.0" layoutY="276.0" rotate="180.0" text="F1" />
+      <Label layoutX="304.0" layoutY="276.0" rotate="180.0" text="F2" />
+      <Label layoutX="345.0" layoutY="276.0" rotate="180.0" text="F3" />
+      <Label layoutX="178.0" layoutY="319.0" rotate="90.0" text="L10" />
+      <Label layoutX="178.0" layoutY="402.0" rotate="90.0" text="L12" />
+      <Label layoutX="137.0" layoutY="320.0" rotate="90.0" text="L13" />
+      <Label layoutX="138.0" layoutY="360.0" rotate="90.0" text="L14" />
+      <Label layoutX="138.0" layoutY="402.0" rotate="90.0" text="L15" />
+      <Label layoutX="262.0" layoutY="234.0" rotate="180.0" text="F10" />
+      <Label layoutX="259.0" layoutY="487.0" text="E12" />
+      <Label layoutX="263.0" layoutY="192.0" rotate="180.0" text="F13" />
+      <Label layoutX="260.0" layoutY="529.0" text="E15" />
+      <Label layoutX="259.0" layoutY="149.0" text="B13" />
+      <Label layoutX="259.0" layoutY="107.0" text="B14" />
+      <Label layoutX="259.0" layoutY="65.0" text="B15" />
+      <Label layoutX="425.0" layoutY="403.0" rotate="-90.0" text="R16" />
+      <Label layoutX="425.0" layoutY="318.0" rotate="-90.0" text="R18" />
+      <Label layoutX="469.0" layoutY="402.0" rotate="-90.0" text="R19" />
+      <Label layoutX="468.0" layoutY="360.0" rotate="-90.0" text="R20" />
+      <Label layoutX="468.0" layoutY="318.0" rotate="-90.0" text="R21" />
+      <Label layoutX="342.0" layoutY="487.0" text="E16" />
+      <Label layoutX="343.0" layoutY="528.0" text="E19" />
+      <Label layoutX="343.0" layoutY="233.0" rotate="180.0" text="F18" />
+      <Label layoutX="432.0" layoutY="360.0" rotate="-90.0" text="R17" />
+      <Label layoutX="169.0" layoutY="360.0" rotate="90.0" text="L11" />
+      <Label layoutX="304.0" layoutY="367.0" text="T5" />
+      <Label layoutX="342.0" layoutY="191.0" rotate="180.0" text="F21" />
+      <Label layoutX="343.0" layoutY="148.0" text="B21" />
+      <Label layoutX="343.0" layoutY="106.0" text="B20" />
+      <Label layoutX="343.0" layoutY="64.0" text="B19" />
+      <Label layoutX="300.0" layoutY="494.0" text="E22" />
+      <Label layoutX="302.0" layoutY="529.0" text="E23" />
+      <Label layoutX="300.0" layoutY="65.0" text="B23" />
+      <Label layoutX="300.0" layoutY="228.0" rotate="180.0" text="F24" />
+      <Label layoutX="301.0" layoutY="192.0" rotate="180.0" text="F25" />
+      <Label layoutX="300.0" layoutY="149.0" text="B25" />
+      <Label layoutX="300.0" layoutY="114.0" text="B26" />
+      <Button fx:id="btnAuto" layoutX="14.0" layoutY="589.0" mnemonicParsing="false" onAction="#onActionAuto" text="AUTO" />
+      <TextArea disable="true" editable="false" layoutX="442.0" layoutY="511.0" prefHeight="115.0" prefWidth="191.0" text="LAYER      KEYMODI      CLOCKWISE ANTI-C&#10;--------    -----------      ----------      --------&#10;TOP                               LEFT             RIGHT&#10;BOTTOM  CTRL             LEFT             RIGHT&#10;FRONT     SHIFT            LEFT             RIGHT&#10;REAR        CTRL+SHIFT LEFT             RIGHT&#10;LEFT                              UP                DOWN&#10;RIGHT      CTRL             UP                DOWN" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
